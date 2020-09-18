@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo navigator</title>
+</head>
+<body>
+<script type="text/javascript">
+
+    function show(pos) {
+       let lat = pos.coords.latitude;
+        let long = pos.coords.longitude;
+        document.write("Широта: " + lat + "<br/>");
+        document.write("Довгота: " + long + "<br/>");
+        }
+
+    function error(o) {
+        alert("Чому Ви не довіряєте шпигунам?");
+    }
+
+    document.write(navigator.userAgent);
+    navigator.geolocation.getCurrentPosition(show, error);
+
+</script>
+</body>
+</html>

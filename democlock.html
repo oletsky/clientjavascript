@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo clock</title>
+</head>
+<body>
+<div id="timer">
+
+</div>
+<script type="text/javascript">
+    window.onload=function() {setInterval("showTime()",1000)};
+    function showTime() {
+        let d = new Date();
+        let tm = (d.getHours()<10)?'0':'';tm+=d.getHours();
+        tm+=(d.getMinutes()<10)?':0':':';tm+=d.getMinutes();
+        tm+=(d.getSeconds()<10)?':0':':';tm+=d.getSeconds();
+        let elem=document.getElementById("timer");
+        elem.innerHTML=tm;
+    }
+
+</script>
+</body>
+</html>

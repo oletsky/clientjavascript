@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>First page</title>
+</head>
+<body>
+Перша сторінка<br/>
+<br/>
+<script type="text/javascript">
+    document.write("Ви відвідали " + history.length + " сторінок");
+    setTimeout("changePage()",5000);
+
+    function changePage() {
+
+        location.href = "changeloc2.html";
+        //location.assign("changeloc2.html");
+    }
+</script>
+</body>
+</html>
