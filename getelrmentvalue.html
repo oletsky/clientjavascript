@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Changing element</title>
+</head>
+<body>
+<div>One</div>
+<div>Two</div>
+<div>Three</div>
+<div>Four</div>
+<div>Five</div>
+<button onclick="show();">Show</button>
+<script type="text/javascript">
+    function show() {
+        var elems = document.getElementsByTagName("div");
+        alert( elems[1].nodeValue );
+        //How to fix it?
+    }
+</script>
+</body>
+</html>
