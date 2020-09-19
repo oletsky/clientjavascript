@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event object</title>
+</head>
+<body>
+<div style="display:inline"
+     onmouseover="showMessage(event);">
+    This text is very dynamic
+</div>
+<script type="text/javascript">
+    function showMessage(e) {
+        alert ("More info about "+e.target.innerHTML);
+    }
+
+</script>
+</body>
+</html>
