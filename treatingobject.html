@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Treating object</title>
+</head>
+<body>
+<button id="source">Тисни!</button>
+<script type="text/javascript">
+    let handlerObject = {
+        handleEvent(event) {
+            alert("Шмяк!");
+        }
+    };
+
+    source.addEventListener('click', handlerObject);
+</script>
+
+</body>
+</html>
